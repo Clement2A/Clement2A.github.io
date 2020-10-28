@@ -1,0 +1,27 @@
+#parameterBox{
+    margin-bottom: 10px;
+}
+
+#cityList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.outerCityPanel{
+    max-width: 220px;
+    border: #444 solid 1px;
+    border-radius: 13px;
+    margin: 4px;
+    box-shadow: 3px 3px 5px #444;
+}
+.cityPanel{
+    font-weight:bold;
+    padding: 10px;
+    border: #e22e2e solid 9px;
+    border-radius: 10px;
+    margin: 3px;
+    text-align: center;
+    letter-spacing: .1rem;
+}
