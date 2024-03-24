@@ -1,3 +1,96 @@
+:root
+{
+    --main-font-color: #303030;
+    --link-color: #6ea228;
+}
+
 html{
     font-family: arial;
+    color: var(--main-font-color);
+}
+
+hr
+{
+    border: 2px solid;
+    border-color: var(--main-font-color);
+    border-radius: 14px;
+    width: 50%;
+    margin: 20px auto;
+}
+
+a
+{
+    color: var(--link-color);
+    text-decoration: none;
+}
+a:hover
+{
+    background-color: #d4eace;
+}
+
+.card
+{
+    padding: 10px;
+    border-radius: 10px;
+}
+tr:nth-child(odd)
+{
+    background-color: #f6f6f6;
+}
+tr:nth-child(even)
+{
+    background-color: #6e6e6e;
+}
+
+.divider
+{
+    height: 50px;
+}
+
+.title
+{
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5px;
+    /*justify-content: center;*/
+}
+
+.title h2
+{
+    width: auto;
+    display: inline;
+}
+
+.status
+{
+    width: auto;
+    display: inline;
+    padding: 3px 5px;
+    border-radius: 10px;
+    color: white;
+    margin-right: 5px;
+    font-size: .8em;
+    font-weight: bold;
+}
+
+.soon
+{
+    background-color: #3472f6;
+}
+
+.wip
+{
+    background-color: #f6a800;
+}
+
+.complete
+{
+    background-color: #5dbc1f;
+}
+
+.hold
+{
+    background-color: #f04141;
 }
