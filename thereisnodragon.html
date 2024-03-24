@@ -8,11 +8,11 @@
     <body>
         <h1>There's No Dragon</h1>
         <p>Steam link: RELEASING SOON!</p>
-        <p>This another project I made with other programming and game designer students at Objectif3D. This was done in slightly less than a year.</p>
+        <p>This is another project I made with other programming and game designer students at Objectif3D. This was done in slightly less than a year.</p>
         <p>In this project, I got to work on several part of the game:</p>
         <ul>
             <li>
-                The minimap system. It is a widget that works autonomously. It will start by adapting it size the actual map's size. Then, depending on what widgets are attached to it, it can gain new function. These widgets include:
+                The minimap system. It is a widget that works autonomously. It will start by adapting it size to the actual map's size. Then, depending on what widgets are attached to it, it can gain new functions. These widgets include:
                 <ul>
                     <li>A marker system, able to track different resources and entities on the map, alongside a filter system to choose what to display.</li>
                     <li>A normalized button, which when clicked will output a normalized 2D vector of where it was clicked. It is used to teleport the player on the map.</li>
@@ -21,10 +21,10 @@
                 </ul>
                 
             </li>
-            <li>The skill tree system. I got to make the whole system, from how skills are created and applied, to how the skill tree itself is generated. Firstly, skills are a simple element that when activated will trigger their effect, which can be unlocking new entities, or changing an entity's stats for example. Then I made a tool so that game designers could quickly and easily make a skill tree. Creating a skill tree can simply be done by creating skill nodes, placing them in a canvas widget and giving them a skill to activate. They can also add thresholds, which locks a skill until a certain amount of them is activated. All the information needed, like if the skill node does have a skill, what threshold it has and what other nodes it is connected to are all shown directly in the widget designer for ease of use. Most behaviours were automated too, like generating all lines between each skills, setting their image, and making it easy to navigate for the player by allowing to drag it around and zooming in or out at runtime.</li>
+            <li>The skill tree system. I got to make the whole system, from how skills are created and applied, to how the skill tree itself is generated. Firstly, a skill is a simple element that when activated will trigger their effect, which can be unlocking new entities, or changing an entity's stats for example. Then I made a tool so that game designers could quickly and easily make a skill tree. Creating a skill tree can simply be done by creating skill nodes, placing them in a canvas widget and giving them a skill to activate. They can also add thresholds, which locks a skill until a certain amount of them is activated. All the information needed, like if the skill node does have a skill, what threshold it has and what other nodes it is connected to are all shown directly in the widget designer for ease of use. Most behaviours were automated too, like generating all lines between each skills, setting their image, and making it easy to navigate for the player by allowing to drag it around and zooming in or out all at runtime.</li>
             <li>The menu system. A system to easily create menus and submenus, creating an history of visited widgets to go back at any give time. It can also create popups to confirm an action that doesn't necessarly leads to a new submenu. It is notably used when changing the screen's resolution, asking to keep the new resolution, or reseting on its own after 10 seconds has passed.</li>
             <li>The game settings. With the menu system I created, I could afterward create different submenus for the different settings of the game, like graphics, sounds and bindings. I also got to implement Unreal's color blind features.</li>
-            <li>The tooltip system. This one was mainly used for the tutorial. It displays information on the screen, like text or player inputs, then waits for a delegate to trigger in order to continue to the next one.</li>
+            <li>The tooltip system. This one was mainly used for the tutorial. It displays information on the screen, like text or player inputs, then waits for a delegate to trigger in order to continue onto the next one.</li>
             <li>The localization. For that part, I actually got tasked to learn about Unreal's localization system, and make some documentation about it for all my classmates about how it work, what it can do and how to set it up easily. Once I did that, I implemented it into the game.</li>
             <li>Some in-game feedbacks, such as healthbars, and entity selection.</li>
         </ul>
