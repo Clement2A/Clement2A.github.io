@@ -30,7 +30,7 @@
                 </ul>
                 
             </li>
-            <li>The skill tree system. I got to make the whole system, from how skills are created and applied, to how the skill tree itself is generated. Firstly, a skill is a simple element that when activated will trigger their effect, which can be unlocking new entities, or changing an entity's stats for example. Then I made a tool so that game designers could quickly and easily make a skill tree. Creating a skill tree can simply be done by creating skill nodes, placing them in a canvas widget and giving them a skill to activate. They can also add thresholds, which locks a skill until a certain amount of them is activated. All the information needed, like if the skill node does have a skill, what threshold it has and what other nodes it is connected to are all shown directly in the widget designer for ease of use. Most behaviours were automated too, like generating all lines between each skills, setting their image, and making it easy to navigate for the player by allowing to drag it around and zooming in or out all at runtime.</li>
+            <li>The skill tree system. I got to make the whole system, from how skills are created and applied, to how the skill tree itself is generated. Firstly, a skill is a simple element that when activated will trigger their effect, which can be unlocking new entities, or changing an entity's stats for example. Then I made a tool so that game designers could quickly and easily make a skill tree. Creating a skill tree can simply be done by creating skill nodes, placing them in a canvas widget and giving them a skill to activate. They can also add thresholds, which locks a skill until a certain amount of them is activated. All the information needed, like if the skill node does have a skill, what threshold it has and what other nodes it is connected to are all shown directly in the widget designer for ease of use. Most behaviours were automated too, like generating all lines between each skills, setting their image, and making it easy to navigate for the player by allowing to drag it around and zooming in or out all at runtime. In order for our game designer to be able to use it with ease, I also made some documentation detailing all the steps necessary to create a functionning skill tree, available <a href="other/SkillTreeDoc.pdf">by clicking here</a>.</li>
             <li>The menu system. A system to easily create menus and submenus, creating an history of visited widgets to go back at any give time. It can also create popups to confirm an action that doesn't necessarly leads to a new submenu. It is notably used when changing the screen's resolution, asking to keep the new resolution, or reseting on its own after 10 seconds has passed.</li>
             <li>The game settings. With the menu system I created, I could afterward create different submenus for the different settings of the game, like graphics, sounds and bindings. I also got to implement Unreal's color blind features.</li>
             <li>The tooltip system. This one was mainly used for the tutorial. It displays information on the screen, like text or player inputs, then waits for a delegate to trigger in order to continue onto the next one.</li>
@@ -41,49 +41,59 @@
         <div class="slideshow-container">
 
           <div class="mySlides fade">
-            <div class="numbertext">1 / 7</div>
+            <div class="numbertext">1 / 8</div>
             <img src="img/MinimapInGame.png" style="width:100%">
             <div class="text">Zoomed-in minimap, displaying entities, map tiles and filters</div>
           </div>
 
           <div class="mySlides fade">
-            <div class="numbertext">2 / 7</div>
+            <div class="numbertext">2 / 8</div>
             <img src="img/SkillTreeSelection.png" style="width:100%">
             <div class="text">In game skill tree selection</div>
           </div>
 
           <div class="mySlides fade">
-            <div class="numbertext">3 / 7</div>
+            <div class="numbertext">3 / 8</div>
             <img src="img/SkillTreeInGame.png" style="width:100%">
             <div class="text">Skill tree in game, can be zoomed-in and out, moved around, displaying currently hovered skill on the left</div>
           </div>
 
 
           <div class="mySlides fade">
-            <div class="numbertext">4 / 7</div>
+            <div class="numbertext">4 / 8</div>
             <img src="img/SkillTreeEditor2.png" style="width:100%">
             <div class="text">Skill tree in editor, visually displaying several informations</div>
           </div>
 
 
           <div class="mySlides fade">
-            <div class="numbertext">5 / 7</div>
+            <div class="numbertext">5 / 8</div>
             <img src="img/SkillTreeEditor.png" style="width:100%">
             <div class="text">All skill nodes can be freely placed and connected to one another</div>
           </div>
 
 
           <div class="mySlides fade">
-            <div class="numbertext">6 / 7</div>
+            <div class="numbertext">6 / 8</div>
             <img src="img/LineWidget.gif" style="width:100%">
             <div class="text">Bifurcated line widget used for the skill tree</div>
           </div>
 
 
           <div class="mySlides fade">
-            <div class="numbertext">7 / 7</div>
+            <div class="numbertext">7 / 8</div>
             <img src="img/ZoneUnlocker.png" style="width:100%">
             <div class="text">Runtime-generated version of the world map in UI, generating button in the shape of the various tiles</div>
+          </div>
+
+
+          <div class="mySlides fade">
+            <div class="numbertext">8 / 8</div>
+            <video width="640" height="480" controls>
+                <source src="vid/SkillTreeShowcase.mp4" type="video/mp4">
+                The browser you are using does not support the video tag.
+            </video>
+            <div class="text">Showcase of the skill tree builder tool</div>
           </div>
 
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -99,6 +109,7 @@
           <span class="dot" onclick="currentSlide(5)"></span>
           <span class="dot" onclick="currentSlide(6)"></span>
           <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
         </div> 
         </div>
     </body>
